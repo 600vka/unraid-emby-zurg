@@ -3,7 +3,7 @@
 Welcome and feel free to use my guide
 special thanks goes to @kentuckyrunner for helping me along the way otherwise none of this would exist. Kudos to you man!.
 
-
+when in doubt check the OP = https://github.com/debridmediamanager/zurg-testing
 
 Tutorial to implement zurg with strm files and emby server on UNRAID instance.
 
