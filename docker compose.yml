@@ -1,0 +1,24 @@
+version: "3.9"  # optional, but recommended
+
+services:
+  zurg:
+    image: ghcr.io/debridmediamanager/zurg:latest
+    container_name: zurg
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9999/dav/version.txt"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    ports:
+      - "9999:9999"
+    volumes:
+      - /mnt/cache/zurg/config.yml:/app/config.yml
+      - /mnt/cache/zurg/data:/app/data
+      - /mnt/cache/zurg/strm:/app/strm
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
+    devices:
+      - "/dev/fuse:/dev/fuse:rwm"
