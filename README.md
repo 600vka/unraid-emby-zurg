@@ -53,6 +53,8 @@ In the /mnt/cache/zurg you will also put the config.yml later on...
 Now its time to fill up the config file for zurg - config.yml
 Example of the config is available here: https://github.com/600vka/unraid-emby-zurg/blob/main/config.yml
 
+adjust the values of **token(rd api key), base_url(zurg), emby_server_url,emby_token, unrestrict_ip(zurg)**
+
 For RD api key head to website real-debrid.com click on the “My devices”
 Copy your rd token in the API Private token part down bellow and copy that key in the config
 
@@ -91,7 +93,7 @@ Find Add stack and click on it
 
 Give it a name > mine is zurg
 
-Paste the following docker-compose into the web-editor: 
+Paste the following docker-compose into the web-editor: https://github.com/600vka/unraid-emby-zurg/blob/main/docker%20compose.yml
 
 scroll all the way down
 
