@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f2afb8f8-43f9-485c-bc16-0252dcdeb1c5)![image](https://github.com/user-attachments/assets/820c5869-2a5e-4b1a-90d4-97263830c582)![image](https://github.com/user-attachments/assets/b24dc16e-869e-46d7-ae16-7df4b218f770)![image](https://github.com/user-attachments/assets/2b4c305b-9c58-4f93-8aea-b78ad5ec80c1)![image](https://github.com/user-attachments/assets/03dfd263-5cf2-4f85-abb6-928b7b969425)# unraid-emby-zurg
+# unraid-emby-zurg
 
 Welcome and feel free to use my guide
 special thanks goes to @kentuckyrunner for helping me along the way otherwise none of this would exist. Kudos to you man!.
@@ -103,4 +103,48 @@ This means step 2 is done.
 
 Check the portainer about the zurg 
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/8f5b09a6-ee4d-42ce-a925-3c96b57ce325" />
 
+Clicking on this icon will show u the logs if everything is ok
+
+The flow works as follows …
+When the zurg starts and u did everything ok, it will start to download the zurgtorrents. 
+
+<img width="362" alt="image" src="https://github.com/user-attachments/assets/3f68e853-a9c4-43b0-a657-f43c7d10fec1" />
+
+When it dl all the files in your rd library, it will start to get the media info for the files, and it starts creating strm files in your /strm folder
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/368503df-8055-4b96-b638-e0ca787a74dd" />
+
+At this point you can properly point the libraries in the emby server to correct folders… because if you look physically on /mnt/cache/zurg/strm you can see that in the strm folder there are new folders created and they are being filled with .strm files.
+
+Start up emby server, and proceed to settings, library 
+
+Create 3 libraries Movies, tv shows, anime as seen on picture.
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/a59a6e61-f309-4571-ae96-487539bccde9" />
+
+Let it scan and add all the files.
+
+Important! add plugin strm extract into emby server!
+
+You can do so by going to emby server settings >Plugins>Catalog>metadata>StrmExtract
+
+<img width="373" alt="image" src="https://github.com/user-attachments/assets/cef2db50-4028-4455-bc43-60c510119de2" />
+
+After the plugin is installed, restart emby server in the portainer, and then go to scheduled tasks also in the emby server settings.
+
+<img width="115" alt="image" src="https://github.com/user-attachments/assets/c9786de9-39f9-4a00-a04a-3ed5aa529d58" />
+
+
+scroll all the way down until u find Strm Extract > and run it clicking on the button as shown on picture….
+
+<img width="252" alt="image" src="https://github.com/user-attachments/assets/8c9c9eed-3d32-4061-8731-5402f7799df1" />
+
+This task will get all the info for video content in your library 
+
+Test playing some movie / show from the library.
+
+End, this concludes the guide
+
+Happy streaming :)
