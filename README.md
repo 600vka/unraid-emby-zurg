@@ -22,15 +22,18 @@ You can do that by going to :
 Unraid webui > Share > Create user share - create a new root share give it a name “zurg”
 For Primary storage option select: cache
 Nothing else to change for now, just click on add share button
+
 <img width="390" alt="image" src="https://github.com/user-attachments/assets/62d93cf5-288f-4e41-8607-1270cb914497" />
 
 After you Click add share, then the settings for the newly created share will automatically pop up, then set it up as follows:
 Scroll down to nfs security settings (you should have nfs enabled in settings – do check it please)
 Export: YES
 Security: Public
+
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/ee097ef1-804c-4855-981e-9455baab3dfa" />
 
 Scroll down to smb settings
+
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/20c8606b-98d2-4633-8cc9-c86fdf4691a4" />
 
 Make sure u select 
