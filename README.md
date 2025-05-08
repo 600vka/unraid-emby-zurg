@@ -50,8 +50,8 @@ In the /mnt/cache/zurg you will also put the config.yml later on...
 
 # Step 2 
 
-Now its time to fill up the config file - config.yml
-Example of the config is available here: 
+Now its time to fill up the config file for zurg - config.yml
+Example of the config is available here: https://github.com/600vka/unraid-emby-zurg/blob/main/config.yml
 
 For RD api key head to website real-debrid.com click on the “My devices”
 Copy your rd token in the API Private token part down bellow and copy that key in the config
