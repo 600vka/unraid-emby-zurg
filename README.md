@@ -96,6 +96,8 @@ Give it a name > mine is zurg
 
 Paste the following docker-compose into the web-editor: https://github.com/600vka/unraid-emby-zurg/blob/main/docker%20compose.yml
 
+Edit> 10.05.2025 - 13:29 - if the :latest isnt pulling like it supposed to use exact name of the release e.g. **image: ghcr.io/debridmediamanager/zurg:2025.05.10.0030-nightly** 
+
 scroll all the way down
 
 <img width="148" alt="image" src="https://github.com/user-attachments/assets/438e9e71-e6ac-424c-9ea6-f37a53539724" />
